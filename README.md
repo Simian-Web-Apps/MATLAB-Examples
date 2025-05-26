@@ -10,7 +10,7 @@ During runtime, the Simian frontend renders the defined web app directly from Py
 
 ### Dependencies
 
-* Simian GUI runs and is tested on MATLAB `R2022a` to `R2024a`.
+* Simian GUI runs and is tested on MATLAB `R2022a` to `R2024b`.
 
 ### Installing
 
@@ -31,8 +31,8 @@ Example web apps are deployed at the [Simian Web Apps Demo portal](https://demo0
 
 * **Ball Thrower**: this example uses the `ode45` solver to calculate the trajectory of a ball being thrown.
     ```
-    import simian.local_v3_0_0.*
-    Uiformio("simian.examples_v3_0_0.ballthrower", WindowTitle="Ball Thrower")
+    import simian.local_v3_2_0.*
+    Uiformio("simian.examples_v3_2_0.ballthrower", WindowTitle="Ball Thrower")
     ```
     See [Example](https://doc.simiansuite.com/simian-gui/example.html) in the documentation for more details.
 
@@ -42,7 +42,7 @@ Example web apps are deployed at the [Simian Web Apps Demo portal](https://demo0
     *guiInit.m*
     ```matlab
     function payload = guiInit(metaData)
-        import simian.gui_v3_0_0.*;
+        import simian.gui_v3_2_0.*;
 
         % Create a form and add it to the payload.
         form            = Form();
@@ -56,7 +56,7 @@ Example web apps are deployed at the [Simian Web Apps Demo portal](https://demo0
     *guiEvent.m*
     ```matlab
     function payload = guiEvent(metaData, payload)
-        import simian.gui_v3_0_0.*;
+        import simian.gui_v3_2_0.*;
 
         % Process the events.
     end
